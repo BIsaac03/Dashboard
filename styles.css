@@ -126,11 +126,14 @@ button{
 .content > p{
     font-weight: bold;
     font-size: 28px;
-    margin: 30px 0px 10px 20px;
     align-self: end;
 }
 
-.projects{
+p.projects{
+    margin: 20px 0px 10px 30px;
+}
+
+div.projects{
     grid-area: 2 / 1 / 5 / 2;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -160,7 +163,7 @@ button{
     font-size: 22px;
 }
 
-.card > p.description{
+.description{
     grid-column: 1 / 5;
     color: grey;
 }
@@ -169,16 +172,54 @@ button{
     align-self: end;
 }
 
-.announcements{
+p.announcements{
+    margin: 20px 0px 10px 10px;
+}
+
+div.announcements{
     grid-area: 2 / 2 / 3 / 3;
+    padding: 20px;
+    margin-right: 30px;
+    border-radius: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 40px;
+}
+
+.announcement > .title{
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .announcements button{
+    margin-top: 10px;
     width: 150px;
 }
 
-.trending{
+p.trending{
+    margin: 30px 0px 10px 10px;
+}
+
+div.trending{
     grid-area: 4 / 2 / 5 / 3;
+    padding: 20px;
+    margin: 0px 30px 50px 0px;
+    border-radius: 10px;
+    background-color: white;
     display: grid;
     grid-template-rows: repeat(4, auto);
+    gap: 20px;
+    height: fit-content;
+}
+
+.trending > .account{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.trending .description{
+    margin-top: 3px;
 }
